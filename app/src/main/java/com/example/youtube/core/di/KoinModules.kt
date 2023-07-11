@@ -1,0 +1,12 @@
+package com.example.youtube.core.di
+
+import com.example.youtube.core.network.networkModule
+import com.example.youtube.data.remote.remoteDataSource
+import org.koin.core.module.Module
+
+    val koinModules = listOf<Module>(
+        repoModules,
+        viewModules,
+        remoteDataSource,
+        networkModule
+    )
